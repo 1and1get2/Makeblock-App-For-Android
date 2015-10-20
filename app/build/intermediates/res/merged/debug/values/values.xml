@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/derek/Workspace/Android/Litao/Makeblock-App-For-Android-master-imported/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/derek/Workspace/Android/Litao/Makeblock-App-For-Android-master-imported/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="Alert">Alert</string>
+    <string name="Please_Press_Reset_Button">Please Press "Reset" Button On Board</string>
+    <string name="RGBled">RGB LED</string>
+    <string name="UnknowFirm">Firmware not found, please upgrade first.</string>
+    <string name="Upgrade_Firmware">Upgrade Firmware</string>
+    <string name="Upgrading">Upgrading</string>
+    <string name="about">About</string>
+    <string name="app_name">Makeblock</string>
+    <string name="back">Back</string>
+    <string name="balllauncher">Ball Launcher</string>
+    <string name="bonded">Bonded</string>
+    <string name="button">Button</string>
+    <string name="cancel">Cancel</string>
+    <string name="connected">Connected</string>
+    <string name="connectfail">Connect Fail</string>
+    <string name="connecting">Device Connecting</string>
+    <string name="create_new_project">Create New Project</string>
+    <string name="dcmotor">DC Motor</string>
+    <string name="delete">Delete</string>
+    <string name="delete_this_layout">Delete This Layout</string>
+    <string name="digitalseg">7 Segment Display</string>
+    <string name="distancemeasure">Distance Measure</string>
+    <string name="drinkcar">Drink Car</string>
+    <string name="examples">Examples</string>
+    <string name="feedback">Feedback</string>
+    <string name="generalcontrols">General Controls</string>
+    <string name="goon">Continue</string>
+    <string name="gripper">Robot Gripper</string>
+    <string name="help">Help</string>
+    <string name="history">History</string>
+    <string name="input_layout_name">Input Project Name</string>
+    <string name="joystick">Joystick</string>
+    <string name="lightsensor">Light Sensor</string>
+    <string name="limitswitch">Limit Switch</string>
+    <string name="linefollow">Line Follower</string>
+    <string name="ok">Ok</string>
+    <string name="pirsensor">PIR Sensor</string>
+    <string name="potentialmeter">Potential Meter</string>
+    <string name="pressbackagain">Press back again to quit</string>
+    <string name="refresh">Refresh</string>
+    <string name="rgbcontrol">RGB Control</string>
+    <string name="roboticarmtank">Robotic Arm Tank</string>
+    <string name="robottank">Robot Tank</string>
+    <string name="selectdevice">Select Device</string>
+    <string name="servomotor">Servo Motor</string>
+    <string name="soundsensor">Sound Sensor</string>
+    <string name="temperature">Temperature Sensor</string>
+    <string name="temperaturemeasure">Temperature Measure</string>
+    <string name="ultrasonic">Ultrasonic Sensor</string>
+    <string name="unbond">Unbond</string>
+    <string name="unknown_device">Unknown Device</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="url_about">http://doc.makeblock.cc/about/</string>
+    <string name="url_feedback">http://doc.makeblock.cc/feedback</string>
+    <string name="url_help">http://doc.makeblock.cc/getting-started-android/</string>
+    <!-- From: file:/Users/derek/Workspace/Android/Litao/Makeblock-App-For-Android-master-imported/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="ButtonText">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">#ffffff</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_margin">3dp</item>
+	    <item name="android:textSize">10sp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+	</style>
+</resources>

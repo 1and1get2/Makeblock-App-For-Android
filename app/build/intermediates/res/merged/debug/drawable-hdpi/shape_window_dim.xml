@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <solid android:color="#000000" />
+</shape>
+<!-- From: file:/Users/derek/Workspace/Android/Litao/Makeblock-App-For-Android-master-imported/app/src/main/res/drawable-hdpi/shape_window_dim.xml -->

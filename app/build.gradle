@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 20
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "cc.makeblock.makeblock"
+        minSdkVersion 11
+        targetSdkVersion 20
+
+        ndk {
+            moduleName "hello-jni"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/umeng-analytics-v5.6.1.jar')
+}
