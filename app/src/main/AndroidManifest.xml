@@ -4,9 +4,6 @@
     android:versionCode="21"
     android:versionName="1.0.20" >
 
-    <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="20" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
@@ -23,6 +20,12 @@
             android:name="cc.makeblock.makeblock.MainActivity"
             android:screenOrientation="sensorLandscape"
             android:configChanges="screenSize|keyboardHidden|orientation" 
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="cc.makeblock.makeblock.WelcomeActivity"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|keyboardHidden|orientation"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
