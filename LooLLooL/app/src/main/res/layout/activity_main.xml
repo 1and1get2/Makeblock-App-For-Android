@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lee.loollool.main_activities.MainActivity">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"/>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@color/colorTabLinBac">
+                <!-- 第一个  -->
+                <RelativeLayout
+                    android:id="@+id/rl_01"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_line_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/white" />
+
+                    <ImageView
+                        android:id="@+id/img_01"
+                        android:layout_width="77dp"
+                        android:layout_height="77dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/jiqiren" />
+
+
+                </RelativeLayout>
+
+                <!-- 第二个  -->
+                <RelativeLayout
+                    android:id="@+id/rl_02"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_line_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/white" />
+
+                    <ImageView
+                        android:id="@+id/img_02"
+                        android:layout_width="77dp"
+                        android:layout_height="77dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/chuangyiqianghui" />
+
+                </RelativeLayout>
+
+                <!-- 第三个  -->
+                <RelativeLayout
+                    android:id="@+id/rl_03"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_line_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/white" />
+
+                    <ImageView
+                        android:id="@+id/img_03"
+                        android:layout_width="77dp"
+                        android:layout_height="77dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/yunketanghui" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_04"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_line_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@android:color/white" />
+
+                    <ImageView
+                        android:id="@+id/img_04"
+                        android:layout_width="77dp"
+                        android:layout_height="77dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/wohui" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="activities.loollool.lee.com.loollool">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/loollool"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.lee.loollool.main_activities.MainActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.lee.loollool.main_activities.WelcomeActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lee.loollool.main_activities.Tab1Activity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.lee.loollool.main_activities.Tab2Activity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.lee.loollool.main_activities.Tab3Activity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.lee.loollool.main_activities.Tab4Activity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.lee.loollool.main_activities.RegisterActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.lee.loollool.modeles_activities.DialogActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+        <activity
+            android:name="com.lee.loollool.modeles_activities.LayoutView"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:screenOrientation="sensorLandscape" />
+
+        <service
+            android:name="com.lee.loollool.Service.Bluetooth"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cc.makeblock.makeblock" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.lee.loollool.Service.BluetoothLE"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cc.makeblock.makeblock" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.lee.loollool.car_activities.CarActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.lee.loollool.car_activities.TimerTaskActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+    </application>
+
+</manifest>

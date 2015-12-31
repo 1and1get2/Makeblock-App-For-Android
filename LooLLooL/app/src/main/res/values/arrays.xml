@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Device">
+        <item>设备型号1</item>
+        <item>设备型号2</item>
+        <item>设备型号3</item>
+        <item>设备型号4</item>
+    </string-array>
+
+</resources>
