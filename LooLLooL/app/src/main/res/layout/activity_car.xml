@@ -6,6 +6,12 @@
     android:background="@drawable/mbot_background"
     tools:context="com.lee.loollool.car_activities.CarActivity">
 
+    <com.lee.loollool.car_activities.TimerView
+        android:id="@+id/timber_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.lee.loollool.car_activities.TimerView>
 
     <ImageView
         android:id="@+id/car_imageView5"

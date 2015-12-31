@@ -9,5 +9,6 @@
         android:id="@+id/img_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/time_count_5" />
+        android:src="@drawable/time_count_5"
+        android:background="@android:color/transparent"/>
 </RelativeLayout>

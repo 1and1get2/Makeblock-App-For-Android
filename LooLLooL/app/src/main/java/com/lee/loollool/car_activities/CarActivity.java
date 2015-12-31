@@ -90,6 +90,8 @@ public class CarActivity extends Activity implements View.OnTouchListener, View.
     private ImageView car_img_speed;
     private ImageView car_img_blow;
 
+    private TimerView timerView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -136,6 +138,14 @@ public class CarActivity extends Activity implements View.OnTouchListener, View.
         car_img_speed.setOnClickListener(this);
         car_img_blow.setOnClickListener(this);
 
+        timerView = (TimerView) findViewById(R.id.timber_view);
+        timerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                timerView.stop();
+            }
+        });
+        timerView.bringToFront();
     }
 
 
@@ -421,7 +431,7 @@ public class CarActivity extends Activity implements View.OnTouchListener, View.
     public void onClick(View v) {
 
         if (v.getId() == R.id.car_img_signal) {
-            if (wifistate) {
+            if (wifistate || true) {
 
                 Toast.makeText(this, "当前的wifi可用", Toast.LENGTH_SHORT).show();
             } else {
@@ -479,7 +489,8 @@ public class CarActivity extends Activity implements View.OnTouchListener, View.
                     break;
                 case R.id.car_img_speed:
                     handler.sendEmptyMessage(CARSPEED);
-                    startActivity(new Intent(this, TimerTaskActivity.class));
+                    timerView.toggle();
+                    //startActivity(new Intent(this, TimerTaskActivity.class));
                     break;
                 case R.id.car_img_blow:
                     handler.sendEmptyMessage(CARBLOW);
